@@ -1,3 +1,30 @@
+# SimCLR Fine-Tuning
+
+This repo is to fine-tune a pretrained **SimCLR** model on the [provided](https://universe.roboflow.com/yaid-pzikt/firefighting-device-detection/dataset/6) dataset.
+
+## Base Implementation
+SimCLR repository: https://github.com/spijkervet/SimCLR.git
+
+## Pretrained Checkpoint
+The pretrained model is downloaded from the official SimCLR release:
+
+```bash
+wget https://github.com/Spijkervet/SimCLR/releases/download/1.2/checkpoint_100.tar
+```
+Source: https://pypi.org/project/simclr/
+
+## Training Script
+
+The main file to check is `finetuning.ipynb` used to fine-tune the SimCLR model.
+It uses data from the `coco/` directory.
+
+## Outputs
+The fine-tuned model checkpoint is in `outputs/` directory.
+The detail outputs are in the notebook file.
+
+
+# Below is the origianl README from the SimCLR Repo
+
 # SimCLR
 PyTorch implementation of SimCLR: A Simple Framework for Contrastive Learning of Visual Representations by T. Chen et al.
 Including support for:
