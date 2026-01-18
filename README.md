@@ -15,13 +15,16 @@ Source: https://pypi.org/project/simclr/
 
 ## Training Script
 
-The main file to check is `finetuning.ipynb` used to fine-tune the SimCLR model.
+The main file to check is `finetuning2.ipynb` used to fine-tune the SimCLR model.
 It uses data from the `coco/` directory.
 
 ## Outputs
-The fine-tuned model checkpoint is in `outputs/` directory.
+The fine-tuned model checkpoint is in `finetuned_model/` directory.
 The detail outputs are in the notebook file.
 
+## Testing Script
+
+Check `inferencing2.ipynb` file for testing the fine-tuned model. The model achieved 0.98 of Top-1 Accuracy and 0.99 of Top-5 Accuracy. Also, the notebook has the confusion matrix.
 
 # Below is the origianl README from the SimCLR Repo
 
